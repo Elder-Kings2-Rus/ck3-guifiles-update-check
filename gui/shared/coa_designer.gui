@@ -1330,7 +1330,6 @@ types CoatOfArmsDesignerTypes
 
 					hbox_scrollbar_coa_label = {
 						name = "scrollbar_rotation"
-
 						blockoverride "label"
 						{
 							text = "COA_DESIGNER_ROTATION"
@@ -1353,13 +1352,10 @@ types CoatOfArmsDesignerTypes
 						layoutpolicy_horizontal = expanding
 						spacing = 10
 
-						expand = {}
-
 						button_checkbox_label = {
 							name = "toggle_flip_emblem_x_axis"
 							tooltip = "COA_DESIGNER_FLIP_EMBLEM_X_AXIS_TT"
-							size = { 25 25 }
-
+							size = { 25 25 }							
 							using = tooltip_se
 
 							onclick = "[CoatOfArmsDesignerEmblemInstancesPanel.ToggleFlipEmblemXAxisDetail]"
@@ -1372,14 +1368,14 @@ types CoatOfArmsDesignerTypes
 							blockoverride "text"
 							{
 								text = "COA_DESIGNER_FLIP_EMBLEM_X_AXIS_CHECKBOX_LABEL"
+								max_width = 120
 							}
 						}
 
 						button_checkbox_label = {
 							name = "toggle_flip_emblem_y_axis"
 							tooltip = "COA_DESIGNER_FLIP_EMBLEM_Y_AXIS_TT"
-							size = { 25 25 }
-
+							size = { 25 25 }							
 							using = tooltip_se
 
 							onclick = "[CoatOfArmsDesignerEmblemInstancesPanel.ToggleFlipEmblemYAxisDetail]"
@@ -1392,6 +1388,8 @@ types CoatOfArmsDesignerTypes
 							blockoverride "text"
 							{
 								text = "COA_DESIGNER_FLIP_EMBLEM_Y_AXIS_CHECKBOX_LABEL"
+								max_width = 120
+								
 							}
 						}
 
@@ -1399,7 +1397,6 @@ types CoatOfArmsDesignerTypes
 							name = "toggle_match_scale"
 							tooltip = "COA_DESIGNER_SCALE_COMBINED_TOGGLE_TT"
 							size = { 25 25 }
-
 							using = tooltip_se
 
 							onclick = "[CoatOfArmsDesignerEmblemInstancesPanel.ToggleMatchEmblemDetailScale]"
@@ -1412,8 +1409,10 @@ types CoatOfArmsDesignerTypes
 							blockoverride "text"
 							{
 								text = "COA_DESIGNER_SCALE_COMBINED_CHECKBOX_LABEL"
+								max_width = 120
 							}
 						}
+						expand = {}
 					}
 				}
 
